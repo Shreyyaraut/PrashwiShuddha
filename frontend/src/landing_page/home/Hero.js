@@ -50,7 +50,7 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "media/images/heroBg6.png",
+  "media/images/heroBg.png",
   "media/images/SoapBg.png"
 ];
 
