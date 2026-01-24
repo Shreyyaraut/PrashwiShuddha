@@ -14,7 +14,7 @@ const category = [
     3: 300,
   },
   images: [
-    "/media/images/I1.jpeg",
+    "/media/images/Ubtan.jpeg",
     "/media/images/UbtanSoap.png",
     "/media/images/UbtanIngr.png",
   ],
@@ -34,7 +34,7 @@ const category = [
     3: 300,
   },
     images: [
-      "/media/images/I5.jpeg",
+      "/media/images/Neem.jpeg",
       "/media/images/NeemSoap.png",
       "/media/images/NeemIngr.png",
     ],
@@ -53,7 +53,7 @@ const category = [
     3: 300,
   },
     images: [
-      "/media/images/I6.jpeg",
+      "/media/images/Almond.jpeg",
       "/media/images/AlmondSoap.png",
       "/media/images/AlmondIngr.png",
     ],
@@ -72,7 +72,7 @@ const category = [
     3: 300,
   },
     images: [
-      "/media/images/I7.jpeg",
+      "/media/images/Sandal.jpeg",
       "/media/images/SandalSoap.png",
       "/media/images/SandalIngr.png",
     ],
@@ -91,7 +91,7 @@ const category = [
     3: 300,
   },
     images: [
-      "/media/images/I8.jpeg",
+      "/media/images/Coconut.jpeg",
       "/media/images/CoconutSoap.png",
       "/media/images/CoconutIngr.png",
     ],
@@ -110,7 +110,7 @@ const category = [
     3: 300,
   },
     images: [
-      "/media/images/I9.jpeg",
+      "/media/images/White.jpeg",
       "/media/images/WhiteSoap.png",
       "/media/images/WhiteIngr.png",
     ],
@@ -125,7 +125,7 @@ const category = [
     unit: "ml",
     price: "₹175.00",
     images: [
-      "/media/images/I2.jpeg",
+      "/media/images/Facewash.jpeg",
       "/media/images/Facewash.png",
     ],
     description:
@@ -139,7 +139,7 @@ const category = [
     unit: "ml",
     price: "₹230.00",
     images: [
-      "/media/images/I3.jpeg",
+      "/media/images/Rosemary.jpeg",
       "/media/images/Hairoil.png",
     ],
     description:
@@ -153,7 +153,7 @@ const category = [
     unit: "ml",
     price: "₹185.00",
     images: [
-      "/media/images/I10.jpeg",
+      "/media/images/Amlarosemary.jpeg",
       "/media/images/Shampo.png",
     ],
     description:
@@ -167,7 +167,7 @@ const category = [
     unit: "ml",
     price: "₹162.00",
     images: [
-      "/media/images/I11.jpeg",
+      "/media/images/Intenseshampoo.jpeg",
       "/media/images/Hairrepair.png",
     ],
     description:
@@ -181,7 +181,7 @@ const category = [
     unit: "ml",
     price: "₹198.00",
     images: [
-      "/media/images/I12.jpeg",
+      "/media/images/Intenseconditioner.jpeg",
       "/media/images/Conditioner.png",
     ],
     description:
@@ -194,8 +194,8 @@ const category = [
      size: 10,
     price: "₹85.00",
     images: [
-      "/media/images/I4.jpeg",
-      "/media/images/I4.jpeg",
+      "/media/images/Lipbalm.jpeg",
+      "/media/images/Lipbalm.jpeg",
     ],
     description:
       "Try the Hydrating Lip Balm. Available in a pack of 1, this balm nourishes and moisturizes your lips, leaving them soft and smooth.",
