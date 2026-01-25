@@ -50,7 +50,7 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "media/images/heroBg.png",
+  "media/images/Background.png",
   "media/images/SoapBg.png"
 ];
 
@@ -84,29 +84,35 @@ function Hero() {
     >
       {/* TEXT – only for first image */}
       {currentIndex === 0 && (
-        <>
-          <h1
-            style={{
-              fontWeight: "700",
-              color: "#552d61",
-              fontSize: "clamp(2.5rem, 6vw, 5rem)",
-              marginBottom: "0.3rem",
-            }}
-          >
-            PRASHWI
-          </h1>
+  <>
+    <h1
+      style={{
+        fontFamily: "'Playfair Display', serif",
+        fontWeight: "600",
+        color: "#552d61",
+        fontSize: "clamp(3.8rem, 8vw, 7rem)",
+        marginBottom: "0.2rem",
+        letterSpacing: "1px",
+        marginTop: "-25px",
+      }}
+    >
+      Prashwi
+    </h1>
 
-          <h2
-            style={{
-              color: "#e53f99",
-              fontSize: "clamp(1.8rem, 5vw, 4rem)",
-              fontWeight: "500",
-            }}
-          >
-            SHUDDHA
-          </h2>
-        </>
-      )}
+    <h2
+      style={{
+        fontFamily: "'Dancing Script', cursive",
+        color: "#e53f99",
+        fontSize: "clamp(3.5rem, 8vw, 7rem)",
+        fontWeight: "700",
+        marginTop: "-10px"
+      }}
+    >
+      Shuddha
+    </h2>
+  </>
+)}
+
 
       {/* SLIDER DOTS */}
       <div

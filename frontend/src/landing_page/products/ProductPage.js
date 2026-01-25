@@ -274,7 +274,7 @@ Price: ₹${price}.00
 Product Link:
 ${window.location.href}
 
-Please confirm availability.
+Please confirm availability. Thank you!
 `;
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(

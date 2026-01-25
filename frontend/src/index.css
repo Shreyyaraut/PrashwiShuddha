@@ -32,7 +32,7 @@ html {
 .nav-link.active {
   color: #552d61 !important;
   font-weight: bold;
-  padding-bottom: 4px;
+  /* padding-bottom: 4px; */
 }
 
 .nav-link:hover {
@@ -393,6 +393,24 @@ body {
   padding-bottom: 10px;
   /* margin-right: 55px; */
 }
+
+.discount-badge {
+  display: inline-block;
+  background-color: #cc0c39;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 4px;
+}
+
+/* .deal-text {
+  color: #cc0c39;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 6px;
+} */
 
 .cart-row {
   display: flex;

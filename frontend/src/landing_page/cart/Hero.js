@@ -107,6 +107,8 @@ function Hero() {
 
             {/* ✅ FIXED className */}
             <div className="price-box">
+            <div className="discount-badge">50% off</div>
+              {/* <div class="deal-text">Limited time deal</div> */}
               <div className="price-row">
                 <span className="selling-price">
                   ₹{parseInt(item.price.replace("₹", "")) * item.qty}.00
