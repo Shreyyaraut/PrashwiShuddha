@@ -394,29 +394,12 @@ body {
   /* margin-right: 55px; */
 }
 
-.discount-badge {
-  display: inline-block;
-  background-color: #cc0c39;
-  color: #fff;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 4px 8px;
-  border-radius: 4px;
-  margin-bottom: 4px;
-}
-
-/* .deal-text {
-  color: #cc0c39;
-  font-size: 14px;
-  font-weight: 600;
-  margin-bottom: 6px;
-} */
-
 .cart-row {
   display: flex;
   gap: 20px;
   padding: 20px 0;
   border-bottom: 1px solid #ddd;
+   align-items: flex-start;
 }
 
 .cart-row img {
@@ -487,12 +470,13 @@ body {
 }
 
 .price-box {
-  text-align: center;
+ min-width: 120px;
+  text-align: right;
 }
 
 .discount-badge {
   display: inline-block;
-  background-color: #cc0c39;
+  background-color: #552d61;
   color: #fff;
   font-size: 13px;
   font-weight: 600;
@@ -501,12 +485,12 @@ body {
   margin-bottom: 4px;
 }
 
-.deal-text {
+/* .deal-text {
   color: #cc0c39;
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 6px;
-}
+} */
 
 .selling-price {
   font-size: 24px;
@@ -555,6 +539,87 @@ body {
   cursor: pointer;
   margin-top: 15px;
 }
+
+@media (max-width: 992px) {
+  .cart-page {
+    flex-direction: column;
+  }
+
+  .cart-right {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .price-box {
+    min-width: 100px;
+  }
+
+  .selling-price {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .price-label {
+    display: none;
+  }
+
+  .cart-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .cart-row img {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .cart-details {
+    width: 100%;
+  }
+
+  .price-box {
+    width: 100%;
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  .discount-badge {
+    margin-bottom: 6px;
+  }
+
+  .selling-price {
+    font-size: 20px;
+  }
+
+  .cart-subtotal-text {
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .cart-left h1 {
+    font-size: 22px;
+  }
+
+  .cart-details h2 {
+    font-size: 16px;
+  }
+
+  .selling-price {
+    font-size: 18px;
+  }
+
+  .qty-box {
+    padding: 2px 8px;
+  }
+
+  .cart-actions {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
 
 .share-overlay {
   position: fixed;
@@ -625,5 +690,6 @@ body {
   background: #fff;
   cursor: pointer;
 }
+
 
 
