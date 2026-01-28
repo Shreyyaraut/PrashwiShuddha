@@ -1,4 +1,4 @@
-name: Build Dist on GitHub Runner
+name: Frontend CI – Build Dist Only
 
 on:
   push:
@@ -7,19 +7,39 @@ on:
   pull_request:
 
 jobs:
-  build:
+  build-frontend:
+    name: Build Frontend (GitHub Runner)
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Setup Node.js (latest LTS)
+      - name: Setup Node.js (Latest LTS)
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
 
-      - name: Debug files
-        run: ls -la
+      - name: Verify frontend folder
+        run: |
+          ls -la
+          ls -la frontend
 
-      - name: Install dependencies
+      - name: Install frontend dependencies
         working-directory: frontend
+        run: npm ci --no-audit --no-fund
+
+      - name: Build frontend (production)
+        working-directory: frontend
+        run: |
+       
+           npm run build
+
+      - name: Verify dist output
+        run: ls -la frontend/dist
+
+      - name: Upload dist artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend/dist
