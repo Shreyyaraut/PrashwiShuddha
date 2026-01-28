@@ -1,4 +1,4 @@
-name: Build on Runner & Deploy Dist Only
+name: Build on Runner → Deploy Dist Only
 
 on:
   push:
@@ -7,28 +7,26 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest   # GitHub runner
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Setup Node.js (latest LTS)
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
-          cache: 'npm'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Build dist on runner
+      - name: Build dist
         run: npm run build
 
       - name: Verify dist folder
         run: ls -la dist
 
-      - name: Copy dist to server
+      - name: Deploy ONLY dist to server
         uses: appleboy/scp-action@v0.1.7
         with:
           host: ${{ secrets.EC2_HOST }}
