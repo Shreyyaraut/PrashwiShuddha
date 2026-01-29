@@ -39,29 +39,35 @@ function Hero() {
   );
 
   const buyNowOnWhatsApp = () => {
-    const phoneNumber = "919923071433";
-    let message = "Hello, I want to place an order:\n\n";
+  if (cart.length === 0 || subtotal === 0) {
+    alert("Your cart is empty. Please add items before buying.");
+    return;
+  }
 
-    cart.forEach((item, index) => {
-      message += `${index + 1}. ${item.title}\n`;
-      message += `   Size: ${
-        item.size ? `${item.size} ${item.unit}` : "N/A"
-      }\n`;
-      message += `   Quantity: ${item.qty}\n`;
-      message += `   Price: ₹${
-        parseInt(item.price.replace("₹", "")) * item.qty
-      }\n\n`;
-    });
+  const phoneNumber = "919923071433";
+  let message = "Hello, I want to place an order:\n\n";
 
-    message += `Subtotal: ₹${subtotal}.00\n\n`;
-    message += "Please confirm availability. Thank you!";
+  cart.forEach((item, index) => {
+    message += `${index + 1}. ${item.title}\n`;
+    message += `   Size: ${
+      item.size ? `${item.size} ${item.unit}` : "N/A"
+    }\n`;
+    message += `   Quantity: ${item.qty}\n`;
+    message += `   Price: ₹${
+      parseInt(item.price.replace("₹", "")) * item.qty
+    }\n\n`;
+  });
 
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      message
-    )}`;
+  message += `Subtotal: ₹${subtotal}.00\n\n`;
+  message += "Please confirm availability. Thank you!";
 
-    window.open(whatsappUrl, "_blank");
-  };
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message
+  )}`;
+
+  window.open(whatsappUrl, "_blank");
+};
+
 
   return (
     <div className="cart-page">
@@ -140,9 +146,14 @@ function Hero() {
           <input type="checkbox" /> This order contains a gift
         </label>
 
-        <button className="cartbuy-btn" onClick={buyNowOnWhatsApp}>
-          Buy Now
-        </button>
+        <button
+  className="cartbuy-btn"
+  onClick={buyNowOnWhatsApp}
+  disabled={cart.length === 0 || subtotal === 0}
+>
+  Buy Now
+</button>
+
       </div>
 
       {shareItem && (
