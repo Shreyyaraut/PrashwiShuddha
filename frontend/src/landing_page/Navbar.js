@@ -73,7 +73,7 @@ function Navbar() {
                 to="/about"
                 onClick={closeMobileMenu}
               >
-                About
+                About Us
               </Link>
             </li>
 
