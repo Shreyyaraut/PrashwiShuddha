@@ -22,7 +22,7 @@ function Hero() {
               className="fw-bold"
               style={{ fontSize: "10vw", maxWidth: "100%", lineHeight: "1.2" }}
             >
-              About
+              About Us
             </h1>
           </div>
         </div>
