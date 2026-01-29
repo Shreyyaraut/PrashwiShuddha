@@ -29,21 +29,21 @@ const products = [
     slug: "sandal-turmeric-vitamin-c-soap",
     title: "Sandal Turmeric Vitamin C Soap – 100g",
     price: "₹299.00",
-    images: "/media/images/Sandal.jpeg",
+    image: "/media/images/Sandal.jpeg",
   },
   {
     id: 5,
     slug: "coconut-cream-deep-moisturizer-soap",
     title: "Coconut Cream Deep Moisturizer Soap – 100g",
     price: "₹299.00",
-    images: "/media/images/Coconut.jpeg",  
+    image: "/media/images/Coconut.jpeg",  
   },
   {
     id: 6,
     slug: "white-blossom-pure-brightening-soap",
     title: "White Blossom Pure Brightening Soap – 100g",
     price: "₹299.00",
-    images: "/media/images/White.jpeg",  
+    image: "/media/images/White.jpeg",  
   },
   {
     id: 7,
@@ -64,28 +64,28 @@ const products = [
     slug: "amla–rosemary-hair-fall-control-shampoo",
     title: "Amla – Rosemary Hair Fall Control Shampoo – 200ml",
     price: "₹369.00",
-    images: "/media/images/Amlarosemary.jpeg",
+    image: "/media/images/Amlarosemary.jpeg",
   },
   {
     id: 10,
     slug: "intense-hair-repair-&-smooth-shampoo",
     title: "Intense Hair Repair & Smooth Shampoo – 200ml",
     price: "₹324.00",
-    images: "/media/images/Intenseshampoo.jpeg",
+    image: "/media/images/Intenseshampoo.jpeg",
   },
   {
     id: 11,
     slug: "intense-moisture-repair-conditioner",
     title: "Intense Moisture Repair Conditioner – 200ml",
     price: "₹396.00",
-    images: "/media/images/Intenseconditioner.jpeg",
+    image: "/media/images/Intenseconditioner.jpeg",
   },
   {
     id: 12,
     slug: "hydrating-lib-balm",
     title: "Hydrating Lib Balm – 10g",
     price: "₹169.00",
-    images: "/media/images/Lipbalm.jpeg",
+    image: "/media/images/Lipbalm.jpeg",
   }
 ];
 
@@ -123,7 +123,7 @@ function SearchResults() {
 
                   {/* 🔥 LINKS TO YOUR EXISTING ProductPage */}
                   <Link
-                    to={`/product/${product.slug}`}
+                    to={`/products/${product.slug}`}
                     className="btn btn-sm btn-outline-purple"
                   >
                     View Product
