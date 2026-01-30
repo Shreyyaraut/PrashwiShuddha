@@ -14,9 +14,9 @@ const category = [
     3: 300,
   },
   images: [
-    "/media/images/Ubtan.jpeg",
-    "/media/images/UbtanSoap.png",
-    "/media/images/UbtanIngr.png",
+    "/media/images/Ubtan.webp",
+    "/media/images/UbtanSoap.webp",
+    "/media/images/UbtanIngr.webp",
   ],
   description:
     "Try the Ubtan Honey Natural Exfoliating Soap Bar. Available in packs of 2 and 3, this ubtan soap bar leaves your skin softer, smoother, and healthier-looking.",
@@ -34,9 +34,9 @@ const category = [
     3: 300,
   },
     images: [
-      "/media/images/Neem.jpeg",
-      "/media/images/NeemSoap.png",
-      "/media/images/NeemIngr.png",
+      "/media/images/Neem.webp",
+      "/media/images/NeemSoap.webp",
+      "/media/images/NeemIngr.webp",
     ],
     description:
       "Try the Neem Basil Natural Detox Soap Bar. Available in a packs of 2 and 3, this neem basil soap bar leaves your skin softer, smoother, and healthier-looking.",
@@ -53,9 +53,9 @@ const category = [
     3: 300,
   },
     images: [
-      "/media/images/Almond.jpeg",
-      "/media/images/AlmondSoap.png",
-      "/media/images/AlmondIngr.png",
+      "/media/images/Almond.webp",
+      "/media/images/AlmondSoap.webp",
+      "/media/images/AlmondIngr.webp",
     ],
     description:
       "Try the Almond Milk Saffron Radiance & Moisturizer Soap Bar. Available in a packs of 2 and 3, this almond milk and saffron soap bar leaves your skin softer, smoother, and healthier-looking.",
@@ -72,9 +72,9 @@ const category = [
     3: 300,
   },
     images: [
-      "/media/images/Sandal.jpeg",
-      "/media/images/SandalSoap.png",
-      "/media/images/SandalIngr.png",
+      "/media/images/Sandal.webp",
+      "/media/images/SandalSoap.webp",
+      "/media/images/SandalIngr.webp",
     ],
     description:
       "Try the Sandal Turmeric Vitamin C Soap Bar. Available in a packs of 2 and 3, this sandalwood and turmeric soap bar leaves your skin softer, smoother, and healthier-looking.",
@@ -91,9 +91,9 @@ const category = [
     3: 300,
   },
     images: [
-      "/media/images/Coconut.jpeg",
-      "/media/images/CoconutSoap.png",
-      "/media/images/CoconutIngr.png",
+      "/media/images/Coconut.webp",
+      "/media/images/CoconutSoap.webp",
+      "/media/images/CoconutIngr.webp",
     ],
     description:
       "Try the Coconut Cream Deep Moisturizer Soap Bar. Available in a packs of 2 and 3, this coconut cream soap bar leaves your skin softer, smoother, and healthier-looking.",
@@ -110,9 +110,9 @@ const category = [
     3: 300,
   },
     images: [
-      "/media/images/White.jpeg",
-      "/media/images/WhiteSoap.png",
-      "/media/images/WhiteIngr.png",
+      "/media/images/White.webp",
+      "/media/images/WhiteSoap.webp",
+      "/media/images/WhiteIngr.webp",
     ],
     description:
       "Try the White Blossom Pure Brightening Soap Bar. Available in a packs of 2 and 3, this white blossom soap bar leaves your skin softer, smoother, and healthier-looking.",
@@ -125,8 +125,8 @@ const category = [
     unit: "ml",
     price: "₹175.00",
     images: [
-      "/media/images/Facewash.jpeg",
-      "/media/images/Facewash.png",
+      "/media/images/Facewash1.webp",
+      "/media/images/Facewash.webp",
     ],
     description:
       "Try the Spotless Glow Face Wash with Vitamin C, Niacinamide & Liquorice Extract. Available in a pack of 1, Designed for daily use, the Spotless Glow Face Wash cleanses impurities while helping improve skin texture and radiance, leaving your skin soft, smooth, and refreshed.",
@@ -139,8 +139,8 @@ const category = [
     unit: "ml",
     price: "₹230.00",
     images: [
-      "/media/images/Rosemary.jpeg",
-      "/media/images/Hairoil.png",
+      "/media/images/Rosemary.webp",
+      "/media/images/Hairoil.webp",
     ],
     description:
       "Try Rosemary Hair Growth Oil. Available in a pack of 1, this hair oil nourishes the scalp and helps promote stronger, healthier hair growth.",
@@ -153,8 +153,8 @@ const category = [
     unit: "ml",
     price: "₹185.00",
     images: [
-      "/media/images/Amlarosemary.jpeg",
-      "/media/images/Shampo.png",
+      "/media/images/Amlarosemary.webp",
+      "/media/images/Shampo.webp",
     ],
     description:
       "Try the Amla – Rosemary Hair Fall Control Shampoo. Available in a pack of 1, this shampoo gently cleanses while helping reduce hair fall and strengthen your hair.",
@@ -167,8 +167,8 @@ const category = [
     unit: "ml",
     price: "₹162.00",
     images: [
-      "/media/images/Intenseshampoo.jpeg",
-      "/media/images/Hairrepair.png",
+      "/media/images/Intenseshampoo.webp",
+      "/media/images/Hairrepair.webp",
     ],
     description:
       "Try the Intense Hair Repair & Smooth Shampoo. Available in a pack of 1, this shampoo repairs damaged hair while leaving it smooth and healthy.",
@@ -181,8 +181,8 @@ const category = [
     unit: "ml",
     price: "₹198.00",
     images: [
-      "/media/images/Intenseconditioner.jpeg",
-      "/media/images/Conditioner.png",
+      "/media/images/Intenseconditioner.webp",
+      "/media/images/Conditioner.webp",
     ],
     description:
       "Try the Intense Moisture Repair Conditioner. Available in a pack of 1, this conditioner deeply nourishes and repairs your hair, leaving it soft and hydrated.",
@@ -194,8 +194,8 @@ const category = [
      size: 10,
     price: "₹85.00",
     images: [
-      "/media/images/Lipbalm.jpeg",
-      "/media/images/Lipbalm.jpeg",
+      "/media/images/Lipbalm.webp",
+      "/media/images/Lipbalm.webp",
     ],
     description:
       "Try the Hydrating Lip Balm. Available in a pack of 1, this balm nourishes and moisturizes your lips, leaving them soft and smooth.",

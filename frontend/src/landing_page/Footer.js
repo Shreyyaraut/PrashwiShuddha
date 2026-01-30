@@ -9,7 +9,7 @@ function Footer() {
           {/* Logo & Social */}
           <div className="col-12 col-md-5 mb-4">
             <img
-              src="/media/images/webLogo.png"
+              src="/media/images/webLogo.webp"
               alt="logo"
               style={{ maxWidth: "120px", height: "auto" }}
             />

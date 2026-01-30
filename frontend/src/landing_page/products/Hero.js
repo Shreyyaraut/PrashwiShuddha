@@ -2,11 +2,11 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const products = [
-  { title: "ALL Products", img: "media/images/webLogo.png", id: null },
-  { title: "SKIN CARE", img: "media/images/SkinImg.jpg", id: "skincare" },
-  { title: "BODY CARE", img: "media/images/BathingImg.jpg", id: "categories" },
-  { title: "HAIR CARE", img: "media/images/HaircareImg.jpg", id: "haircare" },
-  { title: "MAKEUP", img: "media/images/MakeupImg.jpg", id: "makeup" },
+  { title: "ALL Products", img: "media/images/webLogo.webp", id: null },
+  { title: "SKIN CARE", img: "media/images/SkinImg.webp", id: "skincare" },
+  { title: "BODY CARE", img: "media/images/BathingImg.webp", id: "categories" },
+  { title: "HAIR CARE", img: "media/images/HaircareImg.webp", id: "haircare" },
+  { title: "MAKEUP", img: "media/images/MakeupImg.webp", id: "makeup" },
 ];
 
 function Hero() {

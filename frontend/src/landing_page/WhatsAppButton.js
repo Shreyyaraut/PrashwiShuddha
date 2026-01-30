@@ -13,7 +13,7 @@ const WhatsAppButton = () => {
       }}
     >
       <img
-        src="/media/images/Wplogo.png"
+        src="/media/images/Wplogo.webp"
         alt="WhatsApp"
         style={{ width: "50px", height: "50px" }}
       />

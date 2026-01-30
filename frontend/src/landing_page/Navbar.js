@@ -35,7 +35,7 @@ function Navbar() {
         {/* Logo */}
         <Link className="navbar-brand" to="/">
           <img
-            src="/media/images/webLogo.png"
+            src="/media/images/webLogo.webp"
             alt="logo"
             style={{ maxWidth: "115px", height: "auto" }}
           />

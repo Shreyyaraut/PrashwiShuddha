@@ -5,16 +5,16 @@ function Categories() {
   const navigate = useNavigate();
 
   const CategoriesItems = [
-    { src: "media/images/skinCare1.png", hash: "skincare" },
-    { src: "media/images/bodyCare1.png", hash: "categories" },
-    { src: "media/images/hairCare1.png", hash: "haircare" },
-    { src: "media/images/makeUp1.png", hash: "makeup" },
+    { src: "media/images/skinCare1.webp", hash: "skincare" },
+    { src: "media/images/bodyCare1.webp", hash: "categories" },
+    { src: "media/images/hairCare1.webp", hash: "haircare" },
+    { src: "media/images/makeUp1.webp", hash: "makeup" },
   ];
 
   return (
     <div
       style={{
-        backgroundImage: "url('media/images/cat5.jpg')",
+        backgroundImage: "url('media/images/cat5.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

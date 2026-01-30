@@ -50,8 +50,8 @@
 import React, { useState, useEffect } from "react";
 
 const images = [
-  "media/images/Background.png",
-  "media/images/SoapBg.png"
+  "media/images/Background.webp",
+  "media/images/SoapBg.webp"
 ];
 
 function Hero() {

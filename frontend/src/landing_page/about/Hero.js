@@ -4,7 +4,7 @@ function Hero() {
   return (
     <div
       style={{
-        backgroundImage: "url('media/images/About.jpg')",
+        backgroundImage: "url('media/images/About.webp')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
