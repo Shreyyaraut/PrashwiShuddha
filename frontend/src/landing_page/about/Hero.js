@@ -3,27 +3,15 @@ import React from "react";
 function Hero() {
   return (
     <div
+      className="about-hero"
       style={{
         backgroundImage: "url('media/images/About.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        width: "100%",
-        minHeight: "94vh",
-        display: "flex",
-        alignItems: "center",
-        color: "white",
       }}
     >
       <div className="container">
         <div className="row">
           <div className="col text-center text-md-start">
-            <h1
-              className="fw-bold"
-              style={{ fontSize: "10vw", maxWidth: "100%", lineHeight: "1.2" }}
-            >
-              About Us
-            </h1>
+            <h1 className="about-title">About Us</h1>
           </div>
         </div>
       </div>

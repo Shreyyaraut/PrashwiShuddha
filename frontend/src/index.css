@@ -209,6 +209,50 @@ body, html {
   }
 }
 
+.about-hero {
+  width: 100%;
+  min-height: 94vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* 🔥 RESPONSIVE TEXT */
+.about-title {
+  font-weight: 700;
+  line-height: 1.2;
+
+  /* min → preferred → max */
+  font-size: clamp(2.5rem, 8vw, 6rem);
+}
+
+/* 📱 MOBILE */
+@media (max-width: 576px) {
+  .about-hero {
+    min-height: 70vh;
+    text-align: center;
+    margin-top: 85px;
+  }
+
+  .about-title {
+    font-size: clamp(5rem, 10vw, 3.2rem);
+  }
+}
+
+/* 💻 LARGE SCREENS */
+@media (min-width: 1200px) {
+  .about-hero {
+    min-height: 100vh;
+  }
+
+  .about-title {
+    font-size: 6rem;
+  }
+}
+
 .social-icons a {
   background-color: #5d0374;
   color: white;
