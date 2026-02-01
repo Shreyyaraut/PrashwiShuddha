@@ -134,9 +134,9 @@ function Hero() {
       </div>
 
       <div className="cart-right">
-        <p className="delivery">
+        {/* <p className="delivery">
           ✔ Your first order qualifies for <b>FREE Delivery</b>.
-        </p>
+        </p> */}
 
         <h2>
           Subtotal ({cart.length} item): <b>₹{subtotal}.00</b>
