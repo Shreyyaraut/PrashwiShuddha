@@ -5,7 +5,7 @@ const category = [
   {
     id: 7,
     slug: "spotless-glow-face-wash",
-    title: "Spotless Glow Face Wash – Vitamin C, Niacinamide & Liquorice – 120ml",
+    title: "Spotless Glow Face Wash – 120ml",
     price: "₹175.00",
     image: "/media/images/Facewash1.webp",
     size: 120,
