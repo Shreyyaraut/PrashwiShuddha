@@ -139,7 +139,7 @@ function Navbar() {
                 to="/cart"
                 onClick={closeMobileMenu}
               >
-                <i class="fa fa-shopping-cart" aria-hidden="true" style={{fontSize: "30px"}}></i>  Cart
+                <i className="fa fa-shopping-cart" aria-hidden="true" style={{fontSize: "30px"}}></i>  Cart
               </Link>
             </li>
             </ul>

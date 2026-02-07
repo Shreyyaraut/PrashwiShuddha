@@ -236,6 +236,9 @@ body, html {
     text-align: center;
     margin-top: 85px;
   }
+  /* .whatsapp-icon{
+   height: 100px;
+  } */
 
   .about-title {
     font-size: clamp(5rem, 10vw, 3.2rem);
@@ -254,9 +257,12 @@ body, html {
 }
 
 .social-icons a {
+  height: 35px;
+  width: 35px;
+  padding-top: 3px;
+  text-align: center;
   background-color: #5d0374;
   color: white;
-  padding: 8px;
   margin: 0 3px;
   margin-left: -1px;
   border-radius: 30%;

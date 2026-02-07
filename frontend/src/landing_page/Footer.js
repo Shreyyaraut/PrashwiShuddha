@@ -130,7 +130,7 @@ function Footer() {
           &copy; 2023 Prashwi Shuddha. All Rights Reserved.
         </p>
 
-        <div className="social-icons d-flex gap-3 fs-4">
+        <div className="social-icons d-flex gap-2 fs-4">
           <a
             href="https://www.instagram.com/prashwishuddha?igsh=MTlnaXNtYXF3YTZzaA=="
             target="_blank"
