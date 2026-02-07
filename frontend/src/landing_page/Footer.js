@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="mt-5" style={{ backgroundColor: "#fbfbfb" }}>
       <div className="container py-5">
-        <div className="row">
+        <div className="row text-center text-md-start">
           {/* Logo & Social */}
           <div className="col-12 col-md-5 mb-4">
             <img
@@ -80,7 +80,7 @@ function Footer() {
 
           <div className="col-12 col-md-2 mb-4">
   <p className="fs-5 fw-semibold">Categories</p>
-  <p style={{ textAlign: "justify" }}>
+  <p>
     <Link to="/products#skincare" style={{ textDecoration: 'none', color: 'inherit' }}>Skincare</Link>
     <br />
     <Link to="/products#categories" style={{ textDecoration: 'none', color: 'inherit' }}>Bodycare</Link>
