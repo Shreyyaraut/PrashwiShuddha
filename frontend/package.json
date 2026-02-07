@@ -37,5 +37,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "imagemin": "^9.0.1",
+    "imagemin-webp": "^8.0.0"
   }
 }

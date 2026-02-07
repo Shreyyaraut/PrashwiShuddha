@@ -186,7 +186,10 @@ const category = [
     title: "Hydrating Lib Balm – 10g",
     size: 10,
     price: "₹85.00",
-    images: ["/media/images/Lipbalm.webp", "/media/images/Lipbalm.webp"],
+    images: [
+      "/media/images/Lipbalm.webp", 
+      "/media/images/Lipbalm1.webp"
+    ],
     description:
       "Try the Hydrating Lip Balm. Available in a pack of 1, this balm nourishes and moisturizes your lips, leaving them soft and smooth.",
   },
