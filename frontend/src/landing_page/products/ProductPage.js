@@ -192,6 +192,71 @@ const category = [
   },
 ];
 
+const REVIEW_TEXTS = [
+  "Amazing product! Highly recommended.",
+  "Very good quality and value for money.",
+  "Loved the fragrance and texture.",
+  "Results are visible within a few days.",
+  "Perfect for daily use.",
+  "Gentle and effective.",
+  "Skin feels smoother after using this.",
+  "Totally satisfied with the purchase.",
+  "Works exactly as described.",
+  "Will definitely repurchase.",
+  "Good packaging and fast delivery.",
+  "Feels natural and premium.",
+  "My skin feels refreshed.",
+  "Helped improve my skin health.",
+  "One of the best products I’ve used.",
+];
+
+// deterministic number from slug
+const hashFromSlug = (slug) => {
+  return slug
+    .split("")
+    .reduce((acc, char) => acc + char.charCodeAt(0), 0);
+};
+
+const generateReviewsForProduct = (slug) => {
+  const reviews = [];
+  const breakdown = { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0 };
+
+  const seed = hashFromSlug(slug);
+
+  for (let i = 0; i < 15; i++) {
+    const rating = ((seed + i) % 2) + 4; // 4 or 5 stars
+    breakdown[rating]++;
+
+    reviews.push({
+      id: `${slug}-${i}`,
+      rating,
+      text: REVIEW_TEXTS[(seed + i) % REVIEW_TEXTS.length],
+      user: CUSTOMER_NAMES[(seed + i) % CUSTOMER_NAMES.length],
+      date: new Date(
+        Date.now() - i * 86400000
+      ).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "numeric",
+      }),
+    });
+  }
+
+  const totalReviews = 15;
+  const totalScore = Object.entries(breakdown).reduce(
+    (sum, [star, count]) => sum + star * count,
+    0
+  );
+
+  return {
+    rating: +(totalScore / totalReviews).toFixed(1),
+    totalReviews,
+    verifiedBuyers: totalReviews.toString(),
+    breakdown,
+    reviews,
+  };
+};
+
 const CUSTOMER_NAMES = [
   "Niraj",
   "Nupura",
@@ -249,35 +314,19 @@ const getRandomCustomerName = () => {
 function ProductPage() {
   const { slug } = useParams();
   const product = category.find((item) => item.slug === slug);
-  const getReviewStorageKey = (slug) => `product_reviews_${slug}`;
+  
+  const [productReviews, setProductReviews] = useState(() =>
+  generateReviewsForProduct(slug)
+);
 
-  const [productReviews, setProductReviews] = useState(() => {
-    const saved = localStorage.getItem(getReviewStorageKey(slug));
-
-    if (saved) {
-      return JSON.parse(saved);
-    }
-
-    return {
-      rating: 0,
-      totalReviews: 0,
-      verifiedBuyers: "0",
-      breakdown: { 5: 0, 4: 0, 3: 0, 2: 0, 1: 0 },
-      reviews: [],
-    };
-  });
+useEffect(() => {
+  if (slug) {
+    setProductReviews(generateReviewsForProduct(slug));
+  }
+}, [slug]);
 
   const [current, setCurrent] = useState(0);
   const [pack, setPack] = useState(1);
-
-  useEffect(() => {
-    if (!slug) return;
-
-    localStorage.setItem(
-      getReviewStorageKey(slug),
-      JSON.stringify(productReviews),
-    );
-  }, [productReviews, slug]);
 
   const startX = useRef(0);
 
