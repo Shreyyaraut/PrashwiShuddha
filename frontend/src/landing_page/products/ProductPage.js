@@ -318,6 +318,8 @@ function ProductPage() {
   const { slug } = useParams();
   const product = category.find((item) => item.slug === slug);
   
+  const [isZoomed, setIsZoomed] = useState(false);
+
   const [productReviews, setProductReviews] = useState(() =>
   generateReviewsForProduct(slug)
 );
@@ -456,11 +458,12 @@ Please confirm availability. Thank you!
                 <div className="slide" key={idx}>
                   <div className="image-bg">
                     <img
-                      src={img}
-                      alt=""
-                      className="main-image"
-                      draggable={false}
-                    />
+  src={img}
+  alt=""
+  className={`main-image ${isZoomed ? "zoomed" : ""}`}
+  draggable={false}
+  onClick={() => setIsZoomed(!isZoomed)}
+/>
                   </div>
                 </div>
               ))}

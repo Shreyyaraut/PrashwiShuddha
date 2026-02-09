@@ -12,8 +12,8 @@ function Hero() {
     const normalized = stored.map((item) => ({
       ...item,
       qty: item.qty || 1,
-      size: item.size || "",   // 👈 fallback
-      unit: item.unit || "",   // 👈 fallback
+      size: item.size || "", // 👈 fallback
+      unit: item.unit || "", // 👈 fallback
     }));
 
     setCart(normalized);
@@ -33,41 +33,39 @@ function Hero() {
   };
 
   const subtotal = cart.reduce(
-    (sum, item) =>
-      sum + parseInt(item.price.replace("₹", "")) * item.qty,
-    0
+    (sum, item) => sum + parseInt(item.price.replace("₹", "")) * item.qty,
+    0,
   );
 
   const buyNowOnWhatsApp = () => {
-  if (cart.length === 0 || subtotal === 0) {
-    alert("Your cart is empty. Please add items before buying.");
-    return;
-  }
+    if (cart.length === 0 || subtotal === 0) {
+      alert("Your cart is empty. Please add items before buying.");
+      return;
+    }
 
-  const phoneNumber = "919923071433";
-  let message = "Hello, I want to place an order:\n\n";
+    const phoneNumber = "919923071433";
+    let message = "Hello, I want to place an order:\n\n";
 
-  cart.forEach((item, index) => {
-    message += `${index + 1}. ${item.title}\n`;
-    message += `   Size: ${
-      item.size ? `${item.size} ${item.unit}` : "N/A"
-    }\n`;
-    message += `   Quantity: ${item.qty}\n`;
-    message += `   Price: ₹${
-      parseInt(item.price.replace("₹", "")) * item.qty
-    }\n\n`;
-  });
+    cart.forEach((item, index) => {
+      message += `${index + 1}. ${item.title}\n`;
+      message += `   Size: ${
+        item.size ? `${item.size} ${item.unit}` : "N/A"
+      }\n`;
+      message += `   Quantity: ${item.qty}\n`;
+      message += `   Price: ₹${
+        parseInt(item.price.replace("₹", "")) * item.qty
+      }\n\n`;
+    });
 
-  message += `Subtotal: ₹${subtotal}.00\n\n`;
-  message += "Please confirm availability. Thank you!";
+    message += `Subtotal: ₹${subtotal}.00\n\n`;
+    message += "Please confirm availability. Thank you!";
 
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-    message
-  )}`;
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message,
+    )}`;
 
-  window.open(whatsappUrl, "_blank");
-};
-
+    window.open(whatsappUrl, "_blank");
+  };
 
   return (
     <div className="cart-page">
@@ -113,7 +111,7 @@ function Hero() {
 
             {/* ✅ FIXED className */}
             <div className="price-box">
-            <div className="discount-badge">50% off</div>
+              <div className="discount-badge">50% off</div>
               {/* <div class="deal-text">Limited time deal</div> */}
               <div className="price-row">
                 <span className="selling-price">
@@ -122,10 +120,10 @@ function Hero() {
               </div>
 
               {item.mrp && (
-  <div className="mrp-row">
-    M.R.P.: <span className="mrp">{item.mrp}</span>
-  </div>
-)}
+                <div className="mrp-row">
+                  M.R.P.: <span className="mrp">{item.mrp}</span>
+                </div>
+              )}
             </div>
           </div>
         ))}
@@ -149,20 +147,16 @@ function Hero() {
         </label>
 
         <button
-  className="cartbuy-btn"
-  onClick={buyNowOnWhatsApp}
-  disabled={cart.length === 0 || subtotal === 0}
->
-  Buy Now
-</button>
-
+          className="cartbuy-btn"
+          onClick={buyNowOnWhatsApp}
+          disabled={cart.length === 0 || subtotal === 0}
+        >
+          Buy Now
+        </button>
       </div>
 
       {shareItem && (
-        <ShareModal
-          item={shareItem}
-          onClose={() => setShareItem(null)}
-        />
+        <ShareModal item={shareItem} onClose={() => setShareItem(null)} />
       )}
     </div>
   );

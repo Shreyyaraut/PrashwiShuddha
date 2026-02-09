@@ -1097,4 +1097,27 @@ body {
   background-color: #552d61;
 }
 
+.image-bg {
+  overflow: hidden;
+  position: relative;
+}
 
+.main-image {
+  width: 100%;
+  height: auto;
+  cursor: zoom-in;
+  transition: transform 0.4s ease;
+}
+
+/* Hover zoom (desktop) */
+@media (hover: hover) {
+  .main-image:hover {
+    transform: scale(1.2);
+  }
+}
+
+/* Click / tap zoom */
+.main-image.zoomed {
+  transform: scale(1.6);
+  cursor: zoom-out;
+}
