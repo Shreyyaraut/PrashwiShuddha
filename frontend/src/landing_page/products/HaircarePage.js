@@ -46,61 +46,60 @@ const category = [
 
 function HaircarePage() {
   const navigate = useNavigate();
-  
-    const handleAddToCart = (e, item) => {
-      e.preventDefault(); // stop product page navigation
-  
-      const cart = JSON.parse(localStorage.getItem("cart")) || [];
-      cart.push(item);
-      localStorage.setItem("cart", JSON.stringify(cart));
-  
-      navigate("/cart");
-    }
+
+  const handleAddToCart = (e, item) => {
+    e.preventDefault(); // stop product page navigation
+
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.push(item);
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    navigate("/cart");
+  };
   return (
     <section id="haircare" className="category-section">
-    <div className="container category-page">
-      <h1
-        className="category-heading"
-        style={{ fontWeight: "700", color: "#552d61" }}
-      >
-        Everyday Hair Care – For Strong, Healthy Hair
-      </h1>
+      <div className="container category-page">
+        <h1
+          className="category-heading"
+          style={{ fontWeight: "700", color: "#552d61" }}
+        >
+          Everyday Hair Care – For Strong, Healthy Hair
+        </h1>
 
-      <div className="category-grid">
-        {category.map((item) => (
-          <Link
-            to={`/products/${item.slug}`}
-            className="category-card"
-            key={item.id}
-            style={{ textDecoration: "none", color: "inherit" }}
-          >
-            <div className="category-image">
-              <img src={item.image} alt={item.title} />
-            </div>
+        <div className="category-grid">
+          {category.map((item) => (
+            <Link
+              to={`/products/${item.slug}`}
+              className="category-card"
+              key={item.id}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <div className="category-image">
+                <img src={item.image} alt={item.title} />
+              </div>
 
-            <div className="category-info">
-              <p className="category-title">{item.title}</p>
+              <div className="category-info">
+                <p className="category-title">{item.title}</p>
 
-              <div className="category-bottom">
-                <div className="category-pricebox">
-                  <span className="category-price">{item.price}</span>
-                  <div className="mrp-row">
-  M.R.P.: <span className="mrp">{item.mrp}</span>
-</div>
-
+                <div className="category-bottom">
+                  <div className="category-pricebox">
+                    <span className="category-price">{item.price}</span>
+                    <div className="mrp-row">
+                      M.R.P.: <span className="mrp">{item.mrp}</span>
+                    </div>
                   </div>
-                <button
+                  <button
                     className="add-btn"
                     onClick={(e) => handleAddToCart(e, item)}
                   >
                     Add to cart
                   </button>
+                </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div>
       </div>
-    </div>
     </section>
   );
 }

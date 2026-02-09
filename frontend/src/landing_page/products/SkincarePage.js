@@ -7,6 +7,7 @@ const category = [
     slug: "spotless-glow-face-wash",
     title: "Spotless Glow Face Wash – 120ml",
     price: "₹175.00",
+    mrp: "₹349.00",
     image: "/media/images/Facewash1.webp",
     size: 120,
     unit: "ml",
@@ -53,9 +54,9 @@ function SkincarePage() {
               <div className="category-bottom">
                 <div className="category-pricebox">
                   <span className="category-price">{item.price}</span>
-                  <div class="mrp-row">
-                    M.R.P.: <span class="mrp">₹349.00</span>
-                  </div>
+                  <div className="mrp-row">
+  M.R.P.: <span className="mrp">{item.mrp}</span>
+</div>
                   </div>
                 <button
                     className="add-btn"

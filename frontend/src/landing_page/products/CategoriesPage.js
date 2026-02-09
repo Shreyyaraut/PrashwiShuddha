@@ -7,6 +7,7 @@ const category = [
     slug: "ubtan-honey-natural-exfoliating-soap",
     title: "Ubtan Honey Natural Exfoliating Soap – 100g",
     price: "₹149.00",
+    mrp: "₹299.00",
     image: "/media/images/Ubtan.webp",
     size: 100,
     unit: "g",
@@ -16,6 +17,7 @@ const category = [
     slug: "neem-basil-natural-detox-soap",
     title: "Neem Basil Natural Detox Soap – 100g",
     price: "₹149.00",
+    mrp: "₹299.00",
     image: "/media/images/Neem.webp",
     size: 100,
     unit: "g",
@@ -25,6 +27,7 @@ const category = [
     slug: "almond-milk-saffron-radiance-soap",
     title: "Almond Milk Saffron Radiance & Moisturizer Soap – 100g",
     price: "₹149.00",
+    mrp: "₹299.00",
     image: "/media/images/Almond.webp",
     size: 100,
     unit: "g",
@@ -34,6 +37,7 @@ const category = [
     slug: "sandal-turmeric-vitamin-c-soap",
     title: "Sandal Turmeric Vitamin C Soap – 100g",
     price: "₹149.00",
+    mrp: "₹299.00",
     image: "/media/images/Sandal.webp",
     size: 100,
     unit: "g",
@@ -43,6 +47,7 @@ const category = [
     slug: "coconut-cream-deep-moisturizer-soap",
     title: "Coconut Cream Deep Moisturizer Soap – 100g",
     price: "₹149.00",
+    mrp: "₹299.00",
     image: "/media/images/Coconut.webp",
     size: 100,
     unit: "g",
@@ -52,6 +57,7 @@ const category = [
     slug: "white-blossom-pure-brightening-soap",
     title: "White Blossom Pure Brightening Soap – 100g",
     price: "₹149.00",
+    mrp: "₹299.00",
     image: "/media/images/White.webp",
     size: 100,
     unit: "g",
@@ -62,37 +68,35 @@ function CategoriesPage() {
   const navigate = useNavigate();
 
   const handleAddToCart = (e, item) => {
-  e.preventDefault();
+    e.preventDefault();
 
-  const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-  const cartItem = {
-    id: item.id,
-    slug: item.slug,
-    title: item.title,
-    image: item.image,
-    size: item.size,      // ✅ FIX
-    unit: item.unit,      // ✅ FIX
-    qty: 1,
-    price: item.price,
+    const cartItem = {
+      id: item.id,
+      slug: item.slug,
+      title: item.title,
+      image: item.image,
+      size: item.size, // ✅ FIX
+      unit: item.unit, // ✅ FIX
+      qty: 1,
+      price: item.price,
+      mrp: item.mrp,
+    };
+
+    const existingIndex = cart.findIndex(
+      (c) => c.id === item.id && c.size === item.size,
+    );
+
+    if (existingIndex !== -1) {
+      cart[existingIndex].qty += 1;
+    } else {
+      cart.push(cartItem);
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    navigate("/cart");
   };
-
-  const existingIndex = cart.findIndex(
-    (c) => c.id === item.id && c.size === item.size
-  );
-
-  if (existingIndex !== -1) {
-    cart[existingIndex].qty += 1;
-  } else {
-    cart.push(cartItem);
-  }
-
-  localStorage.setItem("cart", JSON.stringify(cart));
-  navigate("/cart");
-};
-
-
-  
 
   return (
     <section id="categories" className="category-section">
@@ -120,11 +124,11 @@ function CategoriesPage() {
                 <p className="category-title">{item.title}</p>
 
                 <div className="category-bottom">
-                <div className="category-pricebox">
-                  <span className="category-price">{item.price}</span>
-                  <div class="mrp-row">
-                    M.R.P.: <span class="mrp">₹299.00</span>
-                  </div>
+                  <div className="category-pricebox">
+                    <span className="category-price">{item.price}</span>
+                    <div className="mrp-row">
+                      M.R.P.: <span className="mrp">{item.mrp}</span>
+                    </div>
                   </div>
 
                   <button

@@ -121,9 +121,11 @@ function Hero() {
                 </span>
               </div>
 
-              <div className="mrp-row">
-                M.R.P.: <span className="mrp">₹333.00</span>
-              </div>
+              {item.mrp && (
+  <div className="mrp-row">
+    M.R.P.: <span className="mrp">{item.mrp}</span>
+  </div>
+)}
             </div>
           </div>
         ))}
