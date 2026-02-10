@@ -4,6 +4,8 @@ import ShareModal from "./ShareModal";
 function Hero() {
   const [cart, setCart] = useState([]);
   const [shareItem, setShareItem] = useState(null);
+  const GIFT_PRICE = 49;
+  const [isGift, setIsGift] = useState(false);
 
   useEffect(() => {
     const stored = JSON.parse(localStorage.getItem("cart")) || [];
@@ -37,6 +39,8 @@ function Hero() {
     0,
   );
 
+  const finalTotal = isGift ? subtotal + GIFT_PRICE : subtotal;
+
   const buyNowOnWhatsApp = () => {
     if (cart.length === 0 || subtotal === 0) {
       alert("Your cart is empty. Please add items before buying.");
@@ -58,6 +62,11 @@ function Hero() {
     });
 
     message += `Subtotal: ₹${subtotal}.00\n\n`;
+     if (isGift) {
+    message += `Gift Package: ₹${GIFT_PRICE}\n`;
+  }
+
+  message += `Total Payable: ₹${finalTotal}.00\n\n`;
     message += "Please confirm availability. Thank you!";
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
@@ -143,8 +152,14 @@ function Hero() {
         </h2>
 
         <label className="gift">
-          <input type="checkbox" /> This order contains a gift
-        </label>
+  <input
+    type="checkbox"
+    checked={isGift}
+    onChange={(e) => setIsGift(e.target.checked)}
+  />
+  Add Gift Package (Only for ₹{GIFT_PRICE}) <br />
+  <span>Make it extra special with gift wrapping</span>
+</label>
 
         <button
           className="cartbuy-btn"
