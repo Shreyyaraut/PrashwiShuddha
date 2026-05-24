@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ReactGA from "react-ga4";
+
 import './index.css';
 import HomePage from './landing_page/home/HomePage';
 import AboutPage from './landing_page/about/AboutPage';
@@ -14,22 +16,31 @@ import WhatsAppButton from './landing_page/WhatsAppButton';
 import CartPage from './landing_page/cart/CartPage';
 
 
+// ADD THIS
+ReactGA.initialize("G-0HPNKWYC5D");
+
+ReactGA.send({
+  hitType: "pageview",
+  page: window.location.pathname,
+});
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <BrowserRouter>
-    <Navbar /> 
+    <Navbar />
     <ScrollToTop />
     <WhatsAppButton />
+
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/products" element={<AllProduct />} />
       <Route path="/products/:slug" element={<ProductPage />} />
       <Route path="/search" element={<SearchResults />} />
-      <Route path="/cart" element={<CartPage/>} />
+      <Route path="/cart" element={<CartPage />} />
     </Routes>
+
     <Footer />
   </BrowserRouter>
 );
-
-
