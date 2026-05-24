@@ -17,7 +17,7 @@ import CartPage from './landing_page/cart/CartPage';
 
 
 // ADD THIS
-ReactGA.initialize("G-0HPNKWYC5D");
+ReactGA.initialize("G-6MPSKGRRFK");
 
 ReactGA.send({
   hitType: "pageview",
