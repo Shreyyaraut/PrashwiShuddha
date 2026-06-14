@@ -6,7 +6,7 @@ const category = [
     id: 12,
     slug: "hydrating-lib-balm",
     title: "Hydrating Lib Balm – 10g",
-    price: "₹85.00",
+    price: "₹99.00",
     mrp: "₹169.00",
     image: "/media/images/Lipbalm.webp",
     size: 10,

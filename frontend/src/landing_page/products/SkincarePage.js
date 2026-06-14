@@ -6,7 +6,7 @@ const category = [
     id: 7,
     slug: "spotless-glow-face-wash",
     title: "Spotless Glow Face Wash – 120ml",
-    price: "₹175.00",
+    price: "₹199.00",
     mrp: "₹349.00",
     image: "/media/images/Facewash1.webp",
     size: 120,
