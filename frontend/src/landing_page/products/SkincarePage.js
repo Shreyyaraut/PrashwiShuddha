@@ -8,7 +8,7 @@ const category = [
     title: "Spotless Glow Face Wash – 120ml",
     price: "₹199.00",
     mrp: "₹349.00",
-    image: "/media/images/Facewash1.webp",
+    image: "/media/images/1FaceWash.webp",
     size: 120,
     unit: "ml",
   },
