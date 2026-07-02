@@ -22,7 +22,7 @@ const category = [
       "/media/images/5UBTANHONEY.webp",
     ],
     description:
-      "Try the Ubtan Honey Natural Exfoliating Soap Bar. Available in packs of 2 and 3, this ubtan soap bar leaves your skin softer, smoother, and healthier-looking.",
+      "Experience radiant, refreshed skin with our Ubtan Honey Exfoliating Soap. Enriched with Honey, Turmeric, Wheatgerm Oil, and traditional herbal extracts, it gently exfoliates, deeply nourishes, and leaves your skin soft, smooth, and naturally glowing.",
   },
 
   {
@@ -44,7 +44,7 @@ const category = [
       "/media/images/5NeemBasil.webp",
     ],
     description:
-      "Try the Neem Basil Natural Detox Soap Bar. Available in a packs of 2 and 3, this neem basil soap bar leaves your skin softer, smoother, and healthier-looking.",
+      "Purify and refresh your skin with our Neem Basil Natural Detox Soap. Enriched with Neem, Basil, Coconut Oil, and Wheatgerm Oil, it gently cleanses, detoxifies, controls excess oil, and leaves your skin soft, healthy, and refreshed.",
   },
   {
     id: 3,
@@ -65,7 +65,7 @@ const category = [
       "/media/images/5AlmondMilkSaffron.webp",
     ],
     description:
-      "Try the Almond Milk Saffron Radiance & Moisturizer Soap Bar. Available in a packs of 2 and 3, this almond milk and saffron soap bar leaves your skin softer, smoother, and healthier-looking.",
+      "Nourish and brighten your skin with our Almond Milk Saffron Soap. Enriched with Almond Milk, Almond Oil, Saffron Extract, and Wheatgerm Oil, it gently cleanses, deeply moisturizes, and leaves your skin soft, smooth, and naturally radiant.",
   },
   {
     id: 4,
@@ -86,7 +86,7 @@ const category = [
       "/media/images/5Sandalturmarric.webp",
     ],
     description:
-      "Try the Sandal Turmeric Vitamin C Soap Bar. Available in a packs of 2 and 3, this sandalwood and turmeric soap bar leaves your skin softer, smoother, and healthier-looking.",
+      "Brighten and refresh your skin with our Sandal Turmeric Vitamin C Soap. Enriched with Turmeric, Sandalwood, Orange Peel Extract, and Wheatgerm Oil, it gently cleanses, nourishes, and leaves your skin soft, radiant, and healthy-looking.",
   },
   {
     id: 5,
@@ -107,7 +107,7 @@ const category = [
       "/media/images/5CoconutCream.webp",
     ],
     description:
-      "Try the Coconut Cream Deep Moisturizer Soap Bar. Available in a packs of 2 and 3, this coconut cream soap bar leaves your skin softer, smoother, and healthier-looking.",
+      "Deeply nourish and hydrate your skin with our Coconut Cream Deep Moisturizer Soap. Enriched with Coconut Cream, Shea Butter, Coconut Oil, and Wheatgerm Oil, it gently cleanses while leaving your skin soft, smooth, and naturally radiant.",
   },
   {
     id: 6,
@@ -128,7 +128,7 @@ const category = [
       "/media/images/5whiteblossom.webp",
     ],
     description:
-      "Try the White Blossom Pure Brightening Soap Bar. Available in a packs of 2 and 3, this white blossom soap bar leaves your skin softer, smoother, and healthier-looking.",
+      "Reveal brighter, healthier-looking skin with our White Blossom Soap. Enriched with Niacinamide, Liquorice Extract, Lemon Oil, and Wheatgerm Oil, it gently cleanses, hydrates, and helps promote a naturally radiant complexion.",
   },
   {
     id: 7,
@@ -146,7 +146,7 @@ const category = [
       "/media/images/5FaceWash.webp",
     ],
     description:
-      "Try the Spotless Glow Face Wash with Vitamin C, Niacinamide & Liquorice Extract. Available in a pack of 1, Designed for daily use, the Spotless Glow Face Wash cleanses impurities while helping improve skin texture and radiance, leaving your skin soft, smooth, and refreshed.",
+      "Reveal fresh, glowing skin with Prashwi Shuddha Spotless Glow Face Wash. Enriched with Vitamin C, Niacinamide, and Liquorice Root Extract, it gently cleanses, brightens, hydrates, and promotes a healthy, even-looking complexion.",
   },
   {
     id: 8,
@@ -164,7 +164,7 @@ const category = [
       "/media/images/6RosemaryHairOil.webp",  
     ],
     description:
-      "Try Rosemary Hair Growth Oil. Available in a pack of 1, this hair oil nourishes the scalp and helps promote stronger, healthier hair growth.",
+      "Experience deep nourishment with our Rosemary Hair Growth Oil, enriched with 9 therapeutic oils. It hydrates the scalp, reduces dryness, adds shine, and promotes stronger, healthier-looking hair.",
   },
   {
     id: 9,
@@ -182,7 +182,7 @@ const category = [
       "/media/images/6AmlaRosemaryHairShampoo.webp",
     ],
     description:
-      "Try the Amla – Rosemary Hair Fall Control Shampoo. Available in a pack of 1, this shampoo gently cleanses while helping reduce hair fall and strengthen your hair.",
+      "Reduce hair fall and strengthen your hair with our Amla-Rosemary Hair Fall Control Shampoo. Enriched with Amla, Rosemary Oil, Shikakai, Bhringraj, Fenugreek, and Aloe Vera, it gently cleanses, nourishes the scalp, and promotes stronger, healthier-looking hair.",
   },
   {
     id: 10,
@@ -201,7 +201,7 @@ const category = [
       "/media/images/7IntenseHairShampoo.webp",
     ],
     description:
-      "Try the Intense Hair Repair & Smooth Shampoo. Available in a pack of 1, this shampoo repairs damaged hair while leaving it smooth and healthy.",
+      "Revitalize your hair with our Intense Hair Repair & Smooth Shampoo. Enriched with Amino Acid Complex 17, it gently cleanses, strengthens hair, reduces breakage, and leaves it soft, smooth, and healthy-looking.",
   },
   {
     id: 11,
@@ -219,7 +219,7 @@ const category = [
       "/media/images/6IntenseHairConditioner.webp",
     ],
     description:
-      "Try the Intense Moisture Repair Conditioner. Available in a pack of 1, this conditioner deeply nourishes and repairs your hair, leaving it soft and hydrated.",
+      "Restore dry, damaged hair with our Intense Moisture Repair Conditioner. Enriched with Amino Acids, Argan Oil, and nourishing plant butters, it deeply hydrates, reduces frizz, and leaves hair soft, smooth, and manageable.",
   },
   {
     id: 12,
@@ -236,7 +236,7 @@ const category = [
       "/media/images/6LipBlam.webp",
     ],
     description:
-      "Try the Hydrating Lip Balm. Available in a pack of 1, this balm nourishes and moisturizes your lips, leaving them soft and smooth.",
+      "Keep your lips soft and hydrated with our Hydrating Lip Balm. Enriched with Shea Butter, Vitamin E, Jojoba Oil, and Almond Oil, it deeply nourishes, repairs dryness, and provides long-lasting moisture.",
   },
 ];
 
